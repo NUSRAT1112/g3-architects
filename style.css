@@ -1,0 +1,293 @@
+
+/* body{
+  padding: 0 40px;
+} */
+
+body{
+  background:#f1f2f2 ;
+}
+
+.global-pading{
+  padding: 40px 100px;
+}
+
+/* <!-- nav start--> */
+.header{
+  background-color: bisque;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.ul li{
+    padding: 20px;
+}
+/* <!-- baner --> */
+.baner{
+    text-align: center;
+}
+.baner-text{
+  padding-bottom: 35px;
+}
+
+.baner img{
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.ass{
+  color: #c8c8c7;
+
+}
+.orange{
+  color: #fd6e0a;
+}
+
+.team div h2{
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+.team div p, .baner-text p{
+  line-height: 22px;
+  opacity: 60%;
+}
+
+.btn-primary
+{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: #fd6e0a;
+    text-align: center;
+    font-weight: bold;
+}
+/* <!-- team start--> */
+.team{
+  display: grid;
+grid-template-columns: repeat(2,auto);
+}
+
+.team div img{
+  width: 40%;
+  padding: 10px;
+}
+
+.team div:nth-child(2){
+  padding-top: 8rem;
+}
+/* future */
+
+.future{
+    display: flex;
+}
+.future div:nth-child(2){
+  padding-left: 45px;
+}
+.future img{
+  width: 100%;
+}
+.love{
+  font-style: italic
+}
+.future button{
+  margin-top: -50px;
+margin-left: -49px;
+padding: 40px;
+}
+
+.future h2{
+    border-left: 3px solid #fd6e0a;
+    margin-bottom: 45px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.future-text{
+    height: 800px;
+    width: 700px;
+    padding: 20px;
+}
+.future-text div{
+  padding: 10px;
+background: #f7f7f7;
+box-shadow: 1px 1px 3px gray;
+
+
+}
+.future-text p{
+  opacity: 60%;
+}
+.bt-pi{
+  font-size: 30px;
+}
+
+
+/* <!-- icon start--> */
+
+.icon p, h4{
+  opacity: 60%;
+}
+.icon-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-img div{
+  padding: 15px;
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+}
+
+.icon-img div:hover{
+  border: 2px solid #7f03c7;
+  transform: scale(0.5) rotate(45deg);
+  background-color: aqua;
+}
+
+.ribon{
+   text-align: center; 
+}
+.projects{
+    text-align: center;
+}
+
+.icon-img h1{
+  padding: 5px;
+  margin: 0;
+}
+
+.icon-img h4{
+  padding: 5px;
+  margin: 0;
+}
+
+.email{
+    text-align: center; 
+}
+.customers{
+   text-align: center;
+}
+/* contact us */
+
+.contactUsSection {
+    background: lightgoldenrodyellow;
+    height: 300px;
+    margin-bottom: 45px;
+  }
+  
+  .contactInput {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contactInput input {
+    width: 25%;
+    color: #141415 !important;
+  }
+  
+  .contactHeading {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .contactButton{
+    text-align: center;
+  }
+
+  textarea {
+    width: 91.5%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .textareaSection {
+    text-align: center;
+  }
+
+  /* <!-- sponsor --> */
+  .sponsor{
+   
+    text-align:center;
+
+  }
+  .sponsor-icon
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sponsor-icon img{
+    filter: grayscale(100%);
+  }
+  /* footer */
+  .footer{
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+  
+  }
+
+/* meadia quaries */
+/* mobil */
+@media only screen and (max-width: 600px) {
+
+ .icon-img, .contactUsSection, .sponsor-icon, .future, .team, .baner, .nav{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .future, .nav{
+    flex-direction: column;
+    margin: 5px;
+  }
+  .icon, .team{
+    padding: 10px;
+    background: white;
+    text-align: center;
+  }
+  .icon-img div, .sponsor-icon img{
+    margin: 5px;
+  }
+  /* .icon-img{
+    flex: none;
+  } */
+}
+  /* .icon global-pading, .contactUsSection{
+      grid-template-columns: repeat(1, 1fr);
+      flex: none;
+  } */
+  /* .icon, .contactUsSection{
+      flex-direction: column;
+  } 
+ 
+  
+}*/
+/* lablate */
+
+@media only screen and (min-width: 689px) and (max-width:992px) {
+  .icon, .contactUsSection, .sponsor{
+      width: 100%;
+
+  }
+
+
+.icon .contactUsSection, .sponsor{
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+}
+.hide{
+  display: none;
+}
